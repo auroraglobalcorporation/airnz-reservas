@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air New Zealand RP | Reservas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-texture"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-area">
+                <div class="koru-icon">
+                    <svg width="50" height="50" viewBox="0 0 100 100" fill="none">
+                        <path d="M50 10 C50 10 30 40 50 70 C70 40 50 10 50 10Z" fill="white" opacity="0.9"/>
+                        <path d="M50 20 C50 20 38 45 50 65 C62 45 50 20 50 20Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <h1>AIR NEW ZEALAND <span>RP</span></h1>
+                    <p>PTFS • Reservas Oficiais</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-title">
+            <h2>✈️ CATÁLOGO DE VOOS</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="voos-grid" id="voosGrid"></div>
+
+        <div class="minhas-reservas">
+            <div class="section-header">
+                <h3>📋 MINHAS RESERVAS</h3>
+                <button onclick="buscarReservasPorNome()" class="btn-clear">🔍 Buscar minhas reservas</button>
+            </div>
+            <div id="listaReservas" class="reservas-lista">
+                <div class="empty-message">Clique em "Buscar minhas reservas" para ver suas viagens!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Air New Zealand RP © 2026 - Inspirada na Air New Zealand real</p>
+        <p><a href="admin.html">🔧 Painel Administrativo</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
